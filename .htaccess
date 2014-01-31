@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule (uno|doina|trica)$                details.php?item=$1 [L] 
+
