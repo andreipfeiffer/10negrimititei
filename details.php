@@ -14,10 +14,11 @@
 		<p><?php echo $content['textIntro'];?></p>
 		<p><?php echo $content['textDescription'];?></p>
 
-		<ul>
+		<ul id="details-slideshow" class="is-js-hidden">
 			<?php
-				foreach ($content['images'] as $img) {
-					echo '<li>
+				foreach ($content['images'] as $key => $img) {
+					$css = ($key > 0) ? 'is-js-shown' : '';
+					echo '<li class="'.$css.'">
 						<img src="assets/images/'.$content['imagesFolder'].'/'.$img->name.'" alt="" />
 						<p>'.$img->caption.'</p>
 					</li>';

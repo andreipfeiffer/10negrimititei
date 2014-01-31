@@ -59,3 +59,30 @@
 .clearfix {
 	*zoom: 1;
 }
+
+
+/* afișează elemente doar dacă avem suport JavaScript */
+.is-js-shown {
+	display: block;
+}
+/* modificator pentru elemente inline */
+.is-js-shown.inline {
+	display: inline;
+}
+/* in caz contrar, le ascundem */
+.no-js .is-js-shown {
+	display: none;
+}
+
+/* ascunde elemente doar daca avem suport JavaScript */
+.is-js-hidden {
+	display: none;
+}
+/* in caz contrar, le lasam vizibile */
+.no-js .is-js-hidden {
+	display: block;
+}
+/* modificator pentru elemente inline */
+.no-js .is-js-hidden.inline {
+	display: inline;
+}
