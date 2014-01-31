@@ -14,21 +14,24 @@
 	<meta property="og:description" content="10 Negri Mititei pleacă în lume să colecţioneze fapte bune."/>
 	<meta name="description" content="" />
 
-	<link rel="stylesheet" href="assets/css/normalize.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" href="assets/css/helpers.css" />
+	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-	<header id="page-header">
-		<h1><a href="./">LOGO 10 negri mititei</a></h1>
-		<nav>
-			<h2 class="visuallyhidden">Navigare principala</h2>
-			<ul>
-				<li><a href="uno">uno</a></li>
-				<li><a href="doina">doina</a></li>
-				<li><a href="trica">trica</a></li>
-				<li>echipa</li>
-				<li>contact</li>
-			</ul>
-		</nav>
-	</header>
+	<div class="container">
+		<header id="page-header">
+			<h1><a href="./">LOGO 10 negri mititei</a></h1>
+			<nav>
+				<h2 class="visuallyhidden">Navigare principala</h2>
+				<ul>
+					<li><a href="uno">uno</a></li>
+					<li><a href="doina">doina</a></li>
+					<li><a href="trica">trica</a></li>
+					<li>echipa</li>
+					<li>contact</li>
+				</ul>
+			</nav>
+		</header>

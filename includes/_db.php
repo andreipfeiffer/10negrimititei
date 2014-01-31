@@ -23,7 +23,6 @@ $details = [];
 
 $details['uno'] = array(
 	// texts
-	'title' => 'Uno',
 	'textIntro' => 'Dupa uno, vine Doina',
 	'textDescription' => 'Long description, dolor sit amet. Long description, dolor sit amet. Long description, dolor sit amet. Long description, dolor sit amet. Long description, dolor sit amet.',
 
