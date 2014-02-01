@@ -22,30 +22,41 @@
 <body>
 
 	<!-- Header -->
-	<header class="navbar navbar-default navbar-fixed-top">
+	<header id="page-header" class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 
-			<div class="navbar-header">
+			<div class="navbar-header clearfix">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
 
-				<a id="wpdesk-navbar-brand" class="navbar-brand retina" href="#">
-					<img alt="10 Negri Mititei" class="img-responsive" src="./images/logo-loveinflat.png" />
+				<a class="navbar-brand retina" href="./">
+					<img alt="10 Negri Mititei" src="assets/images/logo-10-negri-mititei.png" />
 				</a>
 			</div>
 
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="./">Index</a></li>
-					<li><a href="uno">Proiect</a></li>
-					<li><a href="echipa">Echipa</a></li>
-					<li><a href="contact">Contact</a></li>
+					<li class="<?= ($page == 'project') ? 'active' : '' ; ?>"><a href="uno">Proiect</a></li>
+					<li class="<?= ($page == 'echipa') ? 'active' : '' ; ?>"><a href="echipa">Echipa</a></li>
+					<li class="<?= ($page == 'contact') ? 'active' : '' ; ?>"><a href="contact">Contact</a></li>
 				</ul>
-
 			</div>
+
+			<!-- <ul class="nav nav-justified">
+				<li><a href="uno">Uno</a></li>
+				<li><a href="doina">Doina</a></li>
+				<li><a href="trica">Trica</a></li>
+				<li><a href="quad">Quad</a></li>
+				<li><a href="cincu">Cincu</a></li>
+				<li><a href="schatzi">Schatzi</a></li>
+				<li><a href="septimiu">Septimiu</a></li>
+				<li><a href="octi">Octi</a></li>
+				<li><a href="novo">Novo</a></li>
+				<li><a href="deca">Deca</a></li>
+			</ul> -->
 
 		</div>
 	</header><!-- /#page-header -->

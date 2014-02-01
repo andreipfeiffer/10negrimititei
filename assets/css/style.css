@@ -11,6 +11,22 @@ h2 {
 	font-weight: 700;
 }
 
+/* Header */
+#page-header {
+	/*border-bottom: 2px rgba(0, 0, 0, 0.02) solid;*/
+}
+	#page-header .navbar-nav a {
+		padding: 35px;
+		text-transform: uppercase;
+	}
+	.navbar-brand {
+		height: auto;
+		margin-left: 20px;
+	}
+	.navbar-toggle {
+		margin: 30px;
+	}
+
 /* Details page */
 .b-heading {
 	margin-bottom: 2em;
@@ -28,18 +44,11 @@ h2 {
 		line-height: 1;
 	}
 	.b-heading__descr {
-		margin-top: 1em;
 		font-size: 1.5em;
+		width: 74%;
+		margin: 0 auto;
+		margin-top: 1em;
 	}
-
-/* Footer */
-#page-footer {
-	background-color: #36424d;
-	color: #fff;
-	padding: 3em 0;
-	margin-top: 3em;
-	text-align: center;
-}
 
 #details-slideshow {
 	margin: 0;
@@ -97,3 +106,12 @@ h2 {
 			background: #000;
 			color: #fff;
 		}
+
+/* Footer */
+#page-footer {
+	background-color: #36424d;
+	color: #fff;
+	padding: 3em 0;
+	margin-top: 3em;
+	text-align: center;
+}

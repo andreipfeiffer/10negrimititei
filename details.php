@@ -1,8 +1,10 @@
 <?php
 	require_once('includes/_config.php');
 	require_once('includes/_db.php');
+	require_once('includes/views/logo.php');
 
 	$item = $_GET['item'];
+	$page = 'project';
 	$pageTitle = $item . ' - ' . $TITLE;
 	$content = array_key_exists($item, $details) ? $details[$item] : NULL;
 
