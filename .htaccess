@@ -1,4 +1,3 @@
 RewriteEngine On
 
-RewriteRule (uno|doina|trica)$                details.php?item=$1 [L] 
-
+RewriteRule (uno|doina|trica|quad|cincu|schatzi|septimiu|octi|novo|deca)$                details.php?item=$1 [L] 

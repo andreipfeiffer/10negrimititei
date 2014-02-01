@@ -30,6 +30,7 @@
 					<li><a href="uno">uno</a></li>
 					<li><a href="doina">doina</a></li>
 					<li><a href="trica">trica</a></li>
+					<li><a href="quad">quad</a></li>
 					<li>echipa</li>
 					<li>contact</li>
 				</ul>

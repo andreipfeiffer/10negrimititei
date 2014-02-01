@@ -31,6 +31,17 @@
 				?>
 			</ul>
 
+			<ul class="b-listing">
+				<?php
+					foreach ($content['stories'] as $key => $story) {
+						echo '<li>
+							<strong>'.$story->name.'</strong>
+							<p>'.$story->description.'</p>
+						</li>';
+					}
+				?>
+			</ul>
+
 		<?php } ?>
 	</section>
 
