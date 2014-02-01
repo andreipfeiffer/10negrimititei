@@ -9,13 +9,15 @@
 	require_once('includes/views/header.php');
 ?>
 
-	<section>
+	<section class="container">
 
 		<?php if ( $content )  { ?>
 
-			<h1><?php echo $item;?></h1>
-			<p><?php echo $content['textIntro'];?></p>
-			<p><?php echo $content['textDescription'];?></p>
+			<header class="b-heading">
+				<h1 class="b-heading__title"><?php echo $item;?></h1>
+				<strong class="b-heading__subtitle"><?php echo $content['textIntro'];?></strong>
+				<p class="b-heading__descr"><?php echo $content['textDescription'];?></p>
+			</header>
 
 			<ul id="details-slideshow" class="is-js-hidden">
 				<?php

@@ -6,7 +6,7 @@
 	require_once('includes/views/header.php');
 ?>
 
-	<section>
+	<section class="container">
 		<h1>Prima pagina</h1>
 	</section>
 

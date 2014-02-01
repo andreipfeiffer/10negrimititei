@@ -14,25 +14,38 @@
 	<meta property="og:description" content="10 Negri Mititei pleacă în lume să colecţioneze fapte bune."/>
 	<meta name="description" content="" />
 
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="assets/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" href="assets/css/helpers.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
-	<div class="container">
-		<header id="page-header">
-			<h1><a href="./">LOGO 10 negri mititei</a></h1>
-			<nav>
-				<h2 class="visuallyhidden">Navigare principala</h2>
-				<ul>
-					<li><a href="uno">uno</a></li>
-					<li><a href="doina">doina</a></li>
-					<li><a href="trica">trica</a></li>
-					<li><a href="quad">quad</a></li>
-					<li>echipa</li>
-					<li>contact</li>
+	<!-- Header -->
+	<header class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+
+				<a id="wpdesk-navbar-brand" class="navbar-brand retina" href="#">
+					<img alt="10 Negri Mititei" class="img-responsive" src="./images/logo-loveinflat.png" />
+				</a>
+			</div>
+
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="./">Index</a></li>
+					<li><a href="uno">Proiect</a></li>
+					<li><a href="echipa">Echipa</a></li>
+					<li><a href="contact">Contact</a></li>
 				</ul>
-			</nav>
-		</header>
+
+			</div>
+
+		</div>
+	</header><!-- /#page-header -->

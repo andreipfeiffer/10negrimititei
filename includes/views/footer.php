@@ -1,7 +1,8 @@
-		<footer id="page-footer">
-			footer contact info
-		</footer>
-	</div>
+	<footer id="page-footer">
+		<div class="container">
+			Proiect cusut cu drag de Lia
+		</div>
+	</footer>
 
 	<script src="assets/js/libs/modernizr.custom.js"></script>
 	<script src="assets/js/libs/jquery-1.10.1.min.js"></script>
