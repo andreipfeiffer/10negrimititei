@@ -5,10 +5,11 @@ body {
 }
 h1 {
 	text-transform: uppercase;
+	letter-spacing: -5px;
 }
 h1,
 h2 {
-	font-weight: 700;
+	font-weight: 900;
 }
 
 /* Header */
@@ -35,7 +36,7 @@ h2 {
 	text-align: center;
 }
 	.b-heading__title {
-		font-size: 6em;
+		font-size: 8em;
 		text-transform: uppercase;
 	}
 	.b-heading__subtitle {

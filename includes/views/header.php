@@ -14,7 +14,7 @@
 	<meta property="og:description" content="10 Negri Mititei pleacă în lume să colecţioneze fapte bune."/>
 	<meta name="description" content="" />
 
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 	<link rel="stylesheet" href="assets/css/helpers.css" />
 	<link rel="stylesheet" href="assets/css/style.css" />
