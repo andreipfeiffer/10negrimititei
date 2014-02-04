@@ -1,14 +1,13 @@
 
 // Module dependencies
-
 var express = require('express'),
-	routes = require('./routes');
+	config  = require('./config'),
+	routes  = require('./routes');
 
 var app = module.exports = express();
 
 
 // Configuration
-
 app.configure(function() {
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'jade');
@@ -31,9 +30,8 @@ app.configure('production', function() {
 
 
 // Routes
-
 app.get('/', routes.index);
 
-app.listen(3000, function() {
-	console.log("express-bootstrap app running");
-});
+
+// App launch
+app.listen(config.port);
