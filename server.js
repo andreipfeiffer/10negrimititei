@@ -1,7 +1,7 @@
 
 // Module dependencies
 var express  = require('express'),
-	redirect = require("express-redirect"),
+	redirect = require('express-redirect'),
 	config   = require('./config'),
 	routes   = require('./routes');
 

@@ -7,26 +7,29 @@ include includes/head
 			//- Page title
 			header.b-heading
 				h1.b-heading__title
-					| Uno
+					= name
 				strong.b-heading__subtitle
-					| subtitlu
+					= details.textIntro
 				p.b-heading__descr
-					| long descr
+					= details.textDescription
 
 			//- Slideshow
 			ul#details-slideshow.is-js-hidden
-				li.is-js-shown
-					div.image-wrapper
-						img.img-responsive(src='/images/01uno/uno2.jpg', alt='')
-						p.caption
-							| caption
+				each val, index in details.images
+					- var css = (index > 0) ? 'is-js-shown' : ''
+					li(class='#{css}')
+						div.image-wrapper
+							img.img-responsive(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
+							p.caption
+								= val.caption
 
 			//- Stories
 			ul.b-listing
-				li
-					strong
-						| primul primitor
-					p
-						| descriere de la primul primitor
+				each val, index in details.stories
+					li
+						strong
+							= val.name
+						p
+							= val.description
 
 		include includes/page-footer
