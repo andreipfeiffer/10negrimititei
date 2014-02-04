@@ -16,7 +16,8 @@ app.configure(function() {
 	app.set('view options', { layout: false });
 	// render templates with identation
 	app.locals.pretty = true;
-	app.use(express.bodyParser());
+	app.use(express.json());
+	app.use(express.urlencoded());
 	app.use(express.methodOverride());
 	app.use(app.router);
 	app.use(express.static(__dirname + '/public'));
@@ -36,4 +37,6 @@ require('./routes')(app);
 
 
 // App launch
-app.listen(config.port);
+app.listen(config.port, function() {
+	console.log( '"' + config.title + '" started on port: ' + config.port);
+});
