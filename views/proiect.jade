@@ -3,6 +3,30 @@ include includes/head
 		include includes/page-header
 
 		section.container
-			| Proiect
+
+			//- Page title
+			header.b-heading
+				h1.b-heading__title
+					| Uno
+				strong.b-heading__subtitle
+					| subtitlu
+				p.b-heading__descr
+					| long descr
+
+			//- Slideshow
+			ul#details-slideshow.is-js-hidden
+				li.is-js-shown
+					div.image-wrapper
+						img.img-responsive(src='/images/01uno/uno2.jpg', alt='')
+						p.caption
+							| caption
+
+			//- Stories
+			ul.b-listing
+				li
+					strong
+						| primul primitor
+					p
+						| descriere de la primul primitor
 
 		include includes/page-footer
