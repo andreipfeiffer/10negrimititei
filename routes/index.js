@@ -1,3 +1,4 @@
-exports.index = function(req, res){
-	res.render('index', { title: 'Express' })
+module.exports = function(app) {
+	require('./home')(app);
+	require('./proiect')(app);
 };

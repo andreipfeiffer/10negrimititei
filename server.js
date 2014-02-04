@@ -1,13 +1,15 @@
 
 // Module dependencies
-var express = require('express'),
-	config  = require('./config'),
-	routes  = require('./routes');
+var express  = require('express'),
+	redirect = require("express-redirect"),
+	config   = require('./config'),
+	routes   = require('./routes');
 
 var app = module.exports = express();
 
 
 // Configuration
+redirect(app);
 app.configure(function() {
 	app.set('views', __dirname + '/views');
 	app.set('view engine', 'jade');
@@ -30,7 +32,7 @@ app.configure('production', function() {
 
 
 // Routes
-app.get('/', routes.index);
+require('./routes')(app);
 
 
 // App launch
