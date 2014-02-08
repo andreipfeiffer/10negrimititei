@@ -1,19 +1,22 @@
-header#page-header.navbar.navbar-default.navbar-fixed-top
-	.container
-		.navbar-header.clearfix
-			button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
-				span.icon-bar
-				span.icon-bar
-				span.icon-bar
-			a.navbar-brand.retina(href='/proiect')
-				img(alt='10 Negri Mititei', src='/images/logo-10-negri-mititei.png')
+mixin header(pagesObj, name)
+	header#page-header.navbar.navbar-default.navbar-fixed-top
+		.container
+			.navbar-header
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand.retina(href='/proiect')
+					img(alt='10 Negri Mititei', src='/images/logo-10-negri-mititei.png')
 
-		.navbar-collapse.collapse
-			ul.nav.navbar-nav.navbar-right
-				li.class
-					a(href='/proiect/uno') Proiect
-				li.class
-					a(href='/echipa') Echipa
-				li.class
-					a(href='/contact') Contact
-//- /#page-header
+			.navbar-collapse.collapse
+				ul.nav.navbar-nav.navbar-right
+					- var pagesArray = ['uno', 'doina', 'trica', 'quad', 'cincu', 'schatzi', 'septimiu', 'octi', 'novo', 'deca'];
+					each val, index in pagesArray
+						if ( pagesObj.hasOwnProperty(val) )
+							- var css = (val.toLowerCase() == name.toLowerCase()) ? 'active' : ''
+							li
+								a(class='#{css}', href='/proiect/#{val}') #{index + 1}
+						else
+							span.navbar-text #{index + 1}
+	//- /#page-header

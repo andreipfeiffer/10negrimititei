@@ -16,10 +16,30 @@ h2 {
 /* Header */
 #page-header {
 	/*border-bottom: 2px rgba(0, 0, 0, 0.02) solid;*/
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
+	#page-header .navbar-nav .navbar-text,
 	#page-header .navbar-nav a {
-		padding: 35px;
+		padding: 0;
+		margin: 10px;
 		text-transform: uppercase;
+		width: 60px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		border-radius: 50%;
+		background-color: #000;
+		color: #fff;
+		font-size: 18px;
+	}
+	#page-header .navbar-nav a:hover {
+		background-color: #007582;
+	}
+	#page-header .navbar-nav a.active {
+		background-color: #02cae0;
+	}
+	#page-header .navbar-nav .navbar-text {
+		background-color: #aaa;
 	}
 	.navbar-brand {
 		height: auto;
