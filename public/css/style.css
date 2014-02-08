@@ -7,6 +7,7 @@ h1 {
 	text-transform: uppercase;
 	letter-spacing: -5px;
 }
+.bold,
 h1,
 h2 {
 	font-weight: 900;
@@ -40,7 +41,7 @@ h2 {
 		text-transform: uppercase;
 	}
 	.b-heading__subtitle {
-		font-size: 2em;
+		font-size: 30px;
 		text-transform: uppercase;
 		line-height: 1;
 	}
@@ -51,6 +52,7 @@ h2 {
 		margin-top: 1em;
 	}
 
+/* Details carousel */
 .caption-background {
 	position: absolute;
 	bottom: 0;
@@ -65,62 +67,27 @@ h2 {
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
-/*#details-slideshow {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	position: relative;
-	margin-bottom: 3em;
-}
-	#details-slideshow li {
-		margin: 0;
-		padding: 0;
-	}
-	#details-slideshow .image-wrapper {
-		position: relative;
-	}
-		#details-slideshow .caption {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: 100%;
-			background-color: #000;
-			background-color: rgba(0, 0, 0, 0.5);
-			text-align: center;
-			margin: 0;
-			padding: 0.5em 0;
-			color: #fff;
-		}
 
-	#details-slideshow .slidesjs-next, 
-	#details-slideshow .slidesjs-previous {
-		position: absolute;
-		left: 0;
-		top: 50%;
-		width: 100px;
-		height: 100px;
-		margin-top: -50px;
-		background: #000;
-		z-index: 100;
-		text-align: center;
-		line-height: 100px;
+.b-date {
+	text-align: left;
+	text-transform: uppercase;
+	line-height: 1;
+}
+	.b-date__day {
+		display: block;
+		font-size: 32px;
+		color: #666;
 	}
-	#details-slideshow .slidesjs-next {
-		left: auto;
-		right: 0;
+	.b-date__month {
+		display: block;
+		font-size: 12px;
+		letter-spacing: 6px;
 	}
-	#details-slideshow .slidesjs-pagination {
-		margin: 0;
-		padding: 0;
-		text-align: center;
+	.b-date__year {
+		display: block;
+		font-size: 16px;
+		color: #aaa;
 	}
-		#details-slideshow .slidesjs-pagination-item {
-			display: inline-block;
-		}
-		#details-slideshow .slidesjs-pagination-item .active {
-			background: #000;
-			color: #fff;
-		}*/
 
 /* Footer */
 #page-footer {

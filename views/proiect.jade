@@ -44,14 +44,15 @@ include includes/head
 			//- /Slideshow
 
 			//- Stories
+			h2.b-heading__subtitle Pe unde a umblat
 			ul.media-list
 				each val, index in details.stories
 					li.media
 						.pull-left
-							.date
-								span.day= moment(val.date).format('DD')
-								span.month= moment(val.date).format('MMM')
-								span.year= moment(val.date).format('YYYY')
+							.b-date
+								span.b-date__day.bold= moment(val.date).format('DD')
+								span.b-date__month= moment(val.date).format('MMM')
+								span.b-date__year= moment(val.date).format('YYYY')
 						.media-body
 							h4.media-heading
 								= val.name
