@@ -14,14 +14,34 @@ include includes/head
 					= details.textDescription
 
 			//- Slideshow
-			ul#details-slideshow.is-js-hidden
-				each val, index in details.images
-					- var css = (index > 0) ? 'is-js-shown' : ''
-					li(class='#{css}')
-						div.image-wrapper
-							img.img-responsive(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
-							p.caption
-								= val.caption
+			#details-slideshow.carousel.slide(data-ride='carousel')
+
+				//- Wrapper for slides
+				.carousel-inner
+					each val, index in details.images
+						- var css = (index == 0) ? 'active' : ''
+						//- - var css = (index > 0) ? 'is-js-shown' : 'active'
+						.item(class='#{css}', data-target='#details-slideshow', data-slide-to='#{index}')
+							img(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
+							if val.caption
+								.carousel-caption
+									p= val.caption + "fsdf sdf sdf sdf sdfasd fasdf asdjf sbdfsd fsdf sdjfsd jf sdfs dfs df sdfj sdvfj sdvf sdjvf sdfv sdjf vsdjf vdg dfg dfg dfg dfgdfg dfg dfg dfg dfg dfg dfg dfg dfg "
+
+				//- Captions black box background
+				.caption-background
+
+				//- Indicators
+				ol.carousel-indicators
+					each val, index in details.images
+						- var css = (index == 0) ? 'active' : ''
+						li(class='#{css}', data-target='#details-slideshow', data-slide-to='#{index}')
+
+				//- Controls
+				a.left.carousel-control(href='#details-slideshow', data-slide='prev')
+					span.glyphicon.glyphicon-chevron-left
+				a.right.carousel-control(href='#details-slideshow', data-slide='next')
+					span.glyphicon.glyphicon-chevron-right
+			//- /#details-slideshow
 
 			//- Stories
 			ul.b-listing
