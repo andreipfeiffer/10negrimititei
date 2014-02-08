@@ -56,10 +56,11 @@ include includes/head
 								span.b-date__month= moment(val.date).format('MMM')
 								span.b-date__year= moment(val.date).format('YYYY')
 						.media-body
-							h4.media-heading
-								= val.name
-							p
-								= val.description
+							blockquote
+								p
+									= val.description
+								footer
+									= val.name
 			//- /Stories
 
 		include includes/page-footer

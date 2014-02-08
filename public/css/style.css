@@ -2,10 +2,11 @@ body {
 	padding-top: 100px;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
 }
 h1 {
 	text-transform: uppercase;
-	letter-spacing: -5px;
 }
 .bold,
 h1,
@@ -59,6 +60,7 @@ h2 {
 	.b-heading__title {
 		font-size: 8em;
 		text-transform: uppercase;
+		letter-spacing: -5px;
 	}
 	.b-heading__subtitle {
 		font-size: 30px;
@@ -116,4 +118,22 @@ h2 {
 	padding: 3em 0;
 	margin-top: 3em;
 	text-align: center;
+}
+
+/* Index */
+.index-steps .thumbnail {
+	border: 0;
+	border-radius: 0;
+}
+.index-steps .nr {
+	display: block;
+	width: 160px;
+	height: 160px;
+	line-height: 160px;
+	text-align: center;
+	margin: 0 auto;
+	border-radius: 50%;
+	background-color: #ccc;
+	font-size: 120px;
+	color: #fff;
 }
