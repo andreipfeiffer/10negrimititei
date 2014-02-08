@@ -76,10 +76,12 @@ module.exports = function(app) {
 		'stories': [
 			{
 				'name': 'nume primitor',
+				'date': '2013-01-08',
 				'description': 'lorem ipsum, descriere de la primirea mititelului'
 			},
 			{
 				'name': 'al doilea primitor',
+				'date': '2012-12-25',
 				'description': 'a doua descriere de la cel de al doilea primitor a unui mititel'
 			}
 		]

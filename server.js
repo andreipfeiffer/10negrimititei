@@ -16,6 +16,7 @@ app.configure(function() {
 	app.set('view options', { layout: false });
 	// render templates with identation
 	app.locals.pretty = true;
+	app.locals.moment = require('moment');
 	app.use(express.json());
 	app.use(express.urlencoded());
 	// app.use(express.methodOverride());

@@ -25,7 +25,7 @@ include includes/head
 							img(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
 							if val.caption
 								.carousel-caption
-									p= val.caption + "fsdf sdf sdf sdf sdfasd fasdf asdjf sbdfsd fsdf sdjfsd jf sdfs dfs df sdfj sdvfj sdvf sdjvf sdfv sdjf vsdjf vdg dfg dfg dfg dfgdfg dfg dfg dfg dfg dfg dfg dfg dfg "
+									p= val.caption
 
 				//- Captions black box background
 				.caption-background
@@ -44,12 +44,19 @@ include includes/head
 			//- /Slideshow
 
 			//- Stories
-			ul.b-listing
+			ul.media-list
 				each val, index in details.stories
-					li
-						strong
-							= val.name
-						p
-							= val.description
+					li.media
+						.pull-left
+							.date
+								span.day= moment(val.date).format('DD')
+								span.month= moment(val.date).format('MMM')
+								span.year= moment(val.date).format('YYYY')
+						.media-body
+							h4.media-heading
+								= val.name
+							p
+								= val.description
+			//- /Stories
 
 		include includes/page-footer
