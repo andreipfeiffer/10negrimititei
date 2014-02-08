@@ -19,8 +19,8 @@ include includes/head
 				//- Wrapper for slides
 				.carousel-inner
 					each val, index in details.images
-						- var css = (index == 0) ? 'active' : ''
-						//- - var css = (index > 0) ? 'is-js-shown' : 'active'
+						//- - var css = (index == 0) ? 'active' : ''
+						- var css = (index > 0) ? 'is-js-shown' : 'active'
 						.item(class='#{css}', data-target='#details-slideshow', data-slide-to='#{index}')
 							img(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
 							if val.caption
@@ -31,17 +31,17 @@ include includes/head
 				.caption-background
 
 				//- Indicators
-				ol.carousel-indicators
+				ol.carousel-indicators.is-js-shown
 					each val, index in details.images
 						- var css = (index == 0) ? 'active' : ''
 						li(class='#{css}', data-target='#details-slideshow', data-slide-to='#{index}')
 
 				//- Controls
-				a.left.carousel-control(href='#details-slideshow', data-slide='prev')
+				a.left.carousel-control.is-js-shown(href='#details-slideshow', data-slide='prev')
 					span.glyphicon.glyphicon-chevron-left
-				a.right.carousel-control(href='#details-slideshow', data-slide='next')
+				a.right.carousel-control.is-js-shown(href='#details-slideshow', data-slide='next')
 					span.glyphicon.glyphicon-chevron-right
-			//- /#details-slideshow
+			//- /Slideshow
 
 			//- Stories
 			ul.b-listing
