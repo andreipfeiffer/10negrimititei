@@ -8,11 +8,11 @@ include includes/head
 			//- Page title
 			header.b-heading
 				h1.b-heading__title
-					= name
+					!= name
 				strong.b-heading__subtitle
-					= details.textIntro
+					!= details.textIntro
 				p.b-heading__descr
-					= details.textDescription
+					!= details.textDescription
 
 			//- Slideshow
 			if (details.images.length)
