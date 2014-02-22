@@ -47,6 +47,8 @@ h2 {
 		}
 	}
 	#page-header .navbar-nav a:hover {
+		background-color: #444;
+		color: #fff;
 	}
 	#page-header .navbar-nav a.active {
 		background-color: #444;
@@ -164,20 +166,24 @@ h2 {
 	color: #fff;
 }
 
+.b-ico-wrapper {
+	font-size: 0;
+	text-align: center;
+}
 .b-ico {
 	padding: 0;
-	width: 32px;
-	height: 32px;
+	width: 37px;
+	height: 37px;
 	text-align: center;
-	line-height: 32px;
+	line-height: 37px;
 	border-radius: 50%;
-	display: block;
+	display: inline-block;
 	border: 2px #ddd solid;
+	margin: 2px;
 
-	background-size: 50% 50%;
+	background-size: 52% 52%;
 	background-repeat: no-repeat;
 	background-position: center center;
-
 }
 a:hover.b-ico, 
 a:hover .b-ico {
@@ -204,16 +210,15 @@ a:hover .b-ico {
 }
 
 .b-link {
-	display: block;
 	-webkit-transition: all 150ms;
 	-moz-transition: all 150ms;
 	-o-transition: all 150ms;
 	transition: all 150ms;
 }
 .b-link:hover {
-	-webkit-transform: translateY(-3px);
+	/*-webkit-transform: translateY(-3px);
 	-moz-transform:    translateY(-3px);
 	-ms-transform:     translateY(-3px);
 	-o-transform:      translateY(-3px);
-	transform:         translateY(-3px);
+	transform:         translateY(-3px);*/
 }
