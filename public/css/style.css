@@ -29,15 +29,10 @@ h2 {
 		text-align: center;
 		line-height: 46px;
 		border-radius: 50%;
-		color: #000;
+		color: #444;
 		font-size: 16px;
 		display: inline-block;
-		border: 2px #000 solid;
-
-		-webkit-transition: all 150ms;
-		-moz-transition: all 150ms;
-		-o-transition: all 150ms;
-		transition: all 150ms;
+		border: 2px #444 solid;
 	}
 	@media (min-width: 768px) {
 		#page-header .navbar-nav .navbar-text,
@@ -52,15 +47,14 @@ h2 {
 		}
 	}
 	#page-header .navbar-nav a:hover {
-		box-shadow: 0 0 0 4px #000;		
 	}
 	#page-header .navbar-nav a.active {
-		background-color: #000;
+		background-color: #444;
 		color: #fff;
 	}
 	#page-header .navbar-nav .navbar-text {
-		border-color: #aaa;
-		color: #aaa;
+		border-color: #ddd;
+		color: #ddd;
 	}
 	.navbar-brand {
 		height: auto;
@@ -168,4 +162,58 @@ h2 {
 	background-color: #ccc;
 	font-size: 120px;
 	color: #fff;
+}
+
+.b-ico {
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	text-align: center;
+	line-height: 32px;
+	border-radius: 50%;
+	display: block;
+	border: 2px #ddd solid;
+
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+}
+a:hover.b-ico, 
+a:hover .b-ico {
+	border-color: #888;
+}
+
+.b-ico--facebook {
+	background-image: url(../images/svg/facebook.svg);
+}
+.b-ico--twitter {
+	background-image: url(../images/svg/twitter.svg);
+}
+.b-ico--wordpress {
+	background-image: url(../images/svg/wordpress.svg);
+}
+.b-ico--github {
+	background-image: url(../images/svg/github.svg);
+}
+.b-ico--googleplus {
+	background-image: url(../images/svg/googleplus.svg);
+}
+.b-ico--linkedin {
+	background-image: url(../images/svg/linkedin.svg);
+}
+
+.b-link {
+	display: block;
+	-webkit-transition: all 150ms;
+	-moz-transition: all 150ms;
+	-o-transition: all 150ms;
+	transition: all 150ms;
+}
+.b-link:hover {
+	-webkit-transform: translateY(-3px);
+	-moz-transform:    translateY(-3px);
+	-ms-transform:     translateY(-3px);
+	-o-transform:      translateY(-3px);
+	transform:         translateY(-3px);
 }

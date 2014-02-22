@@ -16,7 +16,7 @@ mixin header(pagesObj, name)
 						if ( pagesObj.hasOwnProperty(val) )
 							- var css = (val.toLowerCase() == name.toLowerCase()) ? 'active' : ''
 							li
-								a(class='#{css}', href='/proiect/#{val}') #{index + 1}
+								a.b-link(class='#{css}', href='/proiect/#{val}') #{index + 1}
 						else
 							li
 								span.navbar-text #{index + 1}
