@@ -58,11 +58,13 @@ data['uno'] = {
 	'stories': [
 		{
 			'name': 'nume primitor',
+			'location': 'Alba Iulia',
 			'date': '2013-01-08',
 			'description': 'lorem ipsum, descriere de la primirea mititelului'
 		},
 		{
 			'name': 'al doilea primitor',
+			'location': 'Timisoara',
 			'date': '2012-12-25',
 			'description': 'a doua descriere de la cel de al doilea primitor a unui mititel'
 		}
@@ -125,6 +127,7 @@ data['doina'] = {
 	'stories': [
 		{
 			'name': 'nume primitor',
+			'location': 'Bucuresti',
 			'date': '2013-01-08',
 			'description': 'lorem ipsum, descriere de la primirea mititelului'
 		}
@@ -182,6 +185,7 @@ data['trica'] = {
 	'stories': [
 		{
 			'name': 'nume primitor',
+			'location': 'Arad',
 			'date': '2013-01-08',
 			'description': 'lorem ipsum, descriere de la primirea mititelului'
 		}
