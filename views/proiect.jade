@@ -16,33 +16,14 @@ include includes/head
 
 			//- Slideshow
 			if (details.images.length)
-				#details-slideshow.carousel.slide(data-ride='carousel')
-
-					//- Wrapper for slides
-					.carousel-inner
-						each val, index in details.images
-							//- - var css = (index == 0) ? 'active' : ''
-							- var css = (index > 0) ? 'is-js-shown' : 'active'
-							.item(class='#{css}', data-target='#details-slideshow', data-slide-to='#{index}')
-								img(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
-								if val.caption
-									.carousel-caption
-										p= val.caption
-
-					//- Captions black box background
-					.caption-background
-
-					//- Indicators
-					ol.carousel-indicators.is-js-shown
-						each val, index in details.images
-							- var css = (index == 0) ? 'active' : ''
-							li(class='#{css}', data-target='#details-slideshow', data-slide-to='#{index}')
-
-					//- Controls
-					a.left.carousel-control.is-js-shown(href='#details-slideshow', data-slide='prev')
-						span.glyphicon.glyphicon-chevron-left
-					a.right.carousel-control.is-js-shown(href='#details-slideshow', data-slide='next')
-						span.glyphicon.glyphicon-chevron-right
+				ul#details-slideshow.is-js-hidden
+					each val, index in details.images
+						- var css = (index > 0) ? 'is-js-shown' : ''
+						li(class='#{css}')
+							div.image-wrapper
+								img.img-responsive(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
+								p.caption
+									= val.caption
 			//- /Slideshow
 
 			//- Stories

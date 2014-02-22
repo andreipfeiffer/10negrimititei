@@ -1,7 +1,9 @@
 $(function() {
 	'use strict';
 
-	$('#details-slideshow').carousel({
-		interval: 5000
+	$('#details-slideshow').slidesjs({
+		width: 1500,
+		height: 1000
 	});
+
 });
