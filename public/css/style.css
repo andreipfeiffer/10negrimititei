@@ -135,8 +135,13 @@ h2 {
 			background-color: rgba(0, 0, 0, 0.7);
 			text-align: center;
 			margin: 0;
-			padding: 2em 10%;
+			padding: 0.5em 5%;
 			color: #fff;
+		}
+		@media (min-width: 768px) {
+			#details-slideshow .caption {
+				padding: 2em 10%;
+			}
 		}
 
 	#details-slideshow .slidesjs-next, 
@@ -160,6 +165,15 @@ h2 {
 		background-repeat: no-repeat;
 		background-position: 40% center;
 		background-image: url(../images/svg/arrow-left.svg);
+	}
+	/* hide arrow navigation on phones */
+	#details-slideshow .slidesjs-navigation {
+		display: none;
+	}
+	@media (min-width: 768px) {
+		#details-slideshow .slidesjs-navigation {
+			display: block;
+		}
 	}
 
 	#details-slideshow .slidesjs-next {
