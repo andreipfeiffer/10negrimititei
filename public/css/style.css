@@ -58,11 +58,18 @@ h2 {
 		color: #ddd;
 	}
 	.navbar-brand {
-		height: auto;
 		margin-left: 20px;
 	}
+		.navbar-brand img {
+			height: 40px;
+		}
+		@media (min-width: 768px) {
+			.navbar-brand img {
+				height: 60px;
+			}
+		}
 	.navbar-toggle {
-		margin: 30px;
+		margin: 20px;
 	}
 
 .navbar-nav > li {
