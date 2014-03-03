@@ -1,0 +1,50 @@
+include includes/head
+	body
+		include includes/page-header
+		mixin header(pages, name)
+
+		section.container
+
+			//- Page title
+			header.b-heading
+				h1.b-heading__title
+					span
+						!= name
+				p.b-heading__subtitle
+					span
+						!= details.textIntro
+
+			p.b-heading__descr
+				!= details.textDescription
+
+			//- Slideshow
+			if (details.images.length)
+				ul#details-slideshow.is-js-hidden
+					each val, index in details.images
+						- var css = (index > 0) ? 'is-js-shown' : ''
+						li(class='#{css}')
+							div.image-wrapper
+								img.img-responsive(src='/images/#{details.imagesFolder}/#{val.filename}', alt='')
+								p.caption
+									= val.caption
+			//- /Slideshow
+
+			//- Stories
+			h2.b-heading__subtitle Pe unde a umblat
+			ul.media-list
+				each val, index in details.stories
+					li.media
+						//- .pull-left
+						//- 	.b-date
+						//- 		span.b-date__day.bold= moment(val.date).format('DD')
+						//- 		span.b-date__month= moment(val.date).format('MMM')
+						//- 		span.b-date__year= moment(val.date).format('YYYY')
+						.media-body
+							blockquote
+								p
+									= val.description
+								footer 
+									| #{val.name}, #{val.location}
+			//- /Stories
+
+		include includes/page-footer
