@@ -2,10 +2,12 @@ $(function() {
 	'use strict';
 
 	$('#details-slideshow')
+		// toggle caption when clicking on image
 		.on('click', function() {
 			$(this).find('.caption').slideToggle('fast');
 		})
-		.on('click', '.slidesjs-navigation', function(e) {
+		// disable toggling when clicking the navigation items
+		.on('click', '.slidesjs-navigation, .slidesjs-pagination', function(e) {
 			e.stopPropagation();
 		})
 		.slidesjs({
