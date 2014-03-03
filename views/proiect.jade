@@ -1,4 +1,8 @@
-include includes/head
+doctype html
+html(class="no-js", lang="en")
+
+	include includes/head
+
 	body
 		include includes/page-header
 		mixin header(pages, name)
@@ -14,7 +18,7 @@ include includes/head
 					span
 						!= details.textIntro
 
-			p.b-heading__descr
+			p.b-heading__descr.text-justify
 				!= details.textDescription
 
 			//- Slideshow
