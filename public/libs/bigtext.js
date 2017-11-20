@@ -146,7 +146,7 @@
 // console.log(width, ' previous: ' + previousWidth, property + ' at ' + interval, 'prior: ' + (parseFloat(size) - interval), 'new:' + parseFloat(size));
       $line.css(property, '');
 
-      if(width == maxWidth) {
+      if(width === maxWidth) {
         return {
           match: 'exact',
           size: parseFloat((parseFloat(size) - 0.1).toFixed(3))
